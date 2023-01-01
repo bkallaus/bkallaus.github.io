@@ -39,6 +39,7 @@ const StyledAnchor = styled("a")((props) => ({
   justifyContent: "center",
   flexDirection: "column",
   textAlign: "center",
+  transitionDuration: ".3s",
   "&:hover": {
     transform: "scale(1.02)",
   },

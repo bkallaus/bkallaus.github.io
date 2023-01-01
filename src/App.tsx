@@ -29,11 +29,12 @@ const Links = [
     title: "Quick Calculations",
     src: "https://bkallaus.github.io/quick",
     backgroundColor: theme.color.dark,
-  },
+  }, //move coffee calcuator here
   {
     title: "Espresso Time",
     src: "https://bkallaus.github.io/espresso-time",
     backgroundColor: theme.color.dark,
+    //change to shot time and history
   },
   {
     title: "LinkedIn",
@@ -50,6 +51,23 @@ const Links = [
     src: "mailto:benkallaus@gmail.com",
     backgroundColor: theme.color.light,
   },
+  {
+    title: "What I'm Reading",
+    src: "https://www.goodreads.com/review/list/10294025-benjamin?shelf=currently-reading",
+    backgroundColor: theme.color.light,
+  },
+
+  // {
+  //   title: "Helpful Code",
+  //   src: "",
+  //   backgroundColor: theme.color.light,
+  // },
+  // {
+  //   title: "Chrome Dino",
+  //   // https://www.webtips.dev/webtips/phaser/remake-dino-in-phaserjs-part1
+  //   src: "",
+  //   backgroundColor: theme.color.light,
+  // },
 ];
 
 const App = () => {
@@ -60,11 +78,7 @@ const App = () => {
         <Container
           key="title"
           title="Ben Kallaus"
-          backgroundColor={theme.color.primary}
-        />
-        <Container
-          key="title"
-          title="Software Developer"
+          subtitle="Software Developer"
           backgroundColor={theme.color.primary}
         />
         <ImageContainer />
