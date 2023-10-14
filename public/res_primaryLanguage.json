@@ -32,7 +32,7 @@
     {
       "title": "Quick Calculations",
       "startDate": "2018",
-      "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+      "description": "",
       "images": [
         "images/portfolio/photography/p1.jpg",
         "images/portfolio/photography/p2.jpg"
@@ -52,7 +52,7 @@
     {
       "title": "Espresso Time",
       "startDate": "2015",
-      "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+      "description": "",
       "images": [
         "images/portfolio/adventure/p1.jpg",
         "images/portfolio/adventure/p2.jpg"
