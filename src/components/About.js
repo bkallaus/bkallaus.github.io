@@ -27,6 +27,9 @@ class About extends Component {
                 <span style={{ cursor: "auto" }}>
                   <img
                     height="250px"
+                    style={{
+                      objectFit: 'contain'
+                    }}
                     src={profilepic}
                     alt="Avatar placeholder"
                   />
