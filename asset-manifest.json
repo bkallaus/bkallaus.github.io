@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.57e017e1.js",
-    "static/js/787.156ea618.chunk.js": "/static/js/787.156ea618.chunk.js",
-    "index.html": "/index.html",
-    "main.57e017e1.js.map": "/static/js/main.57e017e1.js.map",
-    "787.156ea618.chunk.js.map": "/static/js/787.156ea618.chunk.js.map"
+    "main.css": "/bkallaus.github.io/static/css/main.2efe7567.css",
+    "main.js": "/bkallaus.github.io/static/js/main.07c40f54.js",
+    "index.html": "/bkallaus.github.io/index.html",
+    "main.2efe7567.css.map": "/bkallaus.github.io/static/css/main.2efe7567.css.map",
+    "main.07c40f54.js.map": "/bkallaus.github.io/static/js/main.07c40f54.js.map"
   },
   "entrypoints": [
-    "static/js/main.57e017e1.js"
+    "static/css/main.2efe7567.css",
+    "static/js/main.07c40f54.js"
   ]
 }
