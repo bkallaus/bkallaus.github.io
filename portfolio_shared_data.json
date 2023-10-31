@@ -4,6 +4,11 @@
       "titles": [ "Full Stack Developer", "Senior Software Engineer", "Mobile App Developer" ],
       "social": [
         {
+          "name": "email",
+          "url": "mailto:benkallaus@gmail.com",
+          "class": "fa fa-envelope"
+        },
+        {
           "name": "github",
           "url": "https://github.com/benkallaus",
           "class": "fab fa-github"
