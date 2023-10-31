@@ -47,10 +47,10 @@ export const App = () => {
         resumeBasicInfo={resumeData.basic_info}
         sharedBasicInfo={sharedData.basic_info}
       />
-      {/* <Projects
+      <Projects
         resumeProjects={resumeData.projects}
         resumeBasicInfo={resumeData.basic_info}
-      /> */}
+      />
       <Skills
         sharedSkills={sharedData.skills}
         resumeBasicInfo={resumeData.basic_info}

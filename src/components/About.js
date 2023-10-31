@@ -75,6 +75,27 @@ const About = ({
               <br />
               {about}
             </div>
+            <div
+              className="card-body font-trebuchet text-justify ml-3 mr-3"
+              style={{
+                height: "auto",
+                fontSize: "132%",
+                lineHeight: "200%",
+              }}
+            >
+              {
+              sharedBasicInfo?.social.map((network) => {
+                return (
+                  <span key={network.name} className="m-4" >
+                    <a href={network.url} target="_blank" rel="noopener noreferrer">
+                      <i style={{
+                      color: 'black',
+                    }} className={network.class}></i>
+                    </a>
+                  </span>
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>
