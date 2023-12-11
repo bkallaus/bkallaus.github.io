@@ -1,0 +1,111 @@
+{
+  "basic_info": {
+    "description_header": "I'm Ben Kallaus.",
+    "description": "Software Engineer with 8+ years of experience in building and maintaining high-quality software. Proven ability to design, implement, and test new features. Expertise in various front-end and back-end technologies. Passionate about building products that make a difference in people's lives. I love learning new things and am always looking for new opportunities to grow.",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience"
+    }
+  },
+  "projects": [
+    {
+      "title": "Musical Cards",
+      "description": "",
+      "images": [
+        "images/portfolio/musical-cards.png"
+      ],
+      "url": "https://bkallaus.github.io/musical-cards",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        }
+      ]
+    },
+    {
+      "title": "Quick Calculations",
+      "description": "",
+      "images": [
+        "images/portfolio/quick-calcs.png"
+      ],
+      "url": "https://bkallaus.github.io/quick",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        }
+      ]
+    },
+    {
+      "title": "Espresso Time",
+      "description": "",
+      "images": [
+        "images/portfolio/espresso-time.png"
+      ],
+      "url": "https://bkallaus.github.io/espresso-time",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tractor Zoom",
+      "title": "Senior Software Developer",
+      "years": "05/2021 - present",
+      "mainTech": [
+        ""
+      ],
+      "technologies": [
+        "Typescript",
+        "NextJs",
+        "React",
+        "AWS",
+        "MySql"
+      ]
+    },
+    {
+      "company": "Source Allies",
+      "title": "Software Consultant",
+      "years": "09/2018 - 05/2021",
+      "mainTech": [
+        ""
+      ],
+      "technologies": [
+        "Typescript",
+        "NextJs",
+        "React",
+        "GCP",
+        "SQL"
+      ]
+    },
+    {
+      "company": "Telligen",
+      "title": "Senior Programmer Analyst",
+      "years": "05/2015 - 09/2018",
+      "mainTech": [
+        ""
+      ],
+      "technologies": [
+        "Java",
+        "HTML",
+        "Javascript",
+        "Angular",
+        "SQL"
+      ]
+    }
+  ]
+}
