@@ -9,14 +9,28 @@
       "experience": "Experience"
     }
   },
-  "projects": [
+  "projects": [  
+    {
+       "title": "Smart Recipes",
+      "description": "",
+      "images": [
+        "images/portfolio/musical-cards.png"
+      ],
+      "url": "https://recipe.kallaus.me",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        }
+      ]
+    },
     {
       "title": "Musical Cards",
       "description": "",
       "images": [
         "images/portfolio/musical-cards.png"
       ],
-      "url": "https://ben.kallaus.io/musical-cards",
+      "url": "https://ben.kallaus.me/musical-cards",
       "technologies": [
         {
           "class": "devicon-react-original",
@@ -30,25 +44,7 @@
       "images": [
         "images/portfolio/quick-calcs.png"
       ],
-      "url": "https://ben.kallaus.io/quick",
-      "technologies": [
-        {
-          "class": "devicon-react-original",
-          "name": "React"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        }
-      ]
-    },
-    {
-      "title": "Espresso Time",
-      "description": "",
-      "images": [
-        "images/portfolio/espresso-time.png"
-      ],
-      "url": "https://ben.kallaus.io/espresso-time",
+      "url": "https://ben.kallaus.me/quick",
       "technologies": [
         {
           "class": "devicon-react-original",

@@ -40,7 +40,7 @@
         },
         {
           "name": "NextJs",
-          "class": "devicon-nextjs-original",
+          "class": "devicon-vercel-original",
           "level": "95"
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "name": "AWS",
-          "class": "devicon-amazonwebservices-original",
+          "class": "devicon-amazonwebservices-plain",
           "level": "70"
         },
         {
