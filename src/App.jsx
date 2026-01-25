@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./App.scss";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Seniority from "./components/Seniority";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -12,41 +13,43 @@ export const App = () => {
   const [resumeData, setResumeData] = useState({});
 
   useEffect(() => {
-    void loadSharedData();
-    void loadResumeFromPath();
+    const loadSharedData = () => {
+      fetch(`portfolio_shared_data.json`, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }).then(async (data) => {
+        const json = await data.json();
+        setSharedBasicInfo(json);
+      });
+    };
+
+    const loadResumeFromPath = () => {
+      fetch(`res_primaryLanguage.json`, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }).then(async (data) => {
+        const json = await data.json();
+        setResumeData(json);
+      });
+    };
+
+    loadSharedData();
+    loadResumeFromPath();
   }, []);
 
-  const loadResumeFromPath = (path) => {
-    fetch(`res_primaryLanguage.json`, {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    }).then(async (data) => {
-      const json = await data.json();
-      setResumeData(json);
-    });
-  }
-
-  const loadSharedData = () => {
-    fetch(`portfolio_shared_data.json`, {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    }).then(async (data) => {
-      const json = await data.json();
-      setSharedBasicInfo(json);
-    });
-  }
-
   return (
-    <div>
-      <Header sharedData={sharedData.basic_info} />
+    <div className="bg-gray-50 min-h-screen">
+      <Navbar />
+      <Hero headerData={sharedData.basic_info} />
       <About
         resumeBasicInfo={resumeData.basic_info}
         sharedBasicInfo={sharedData.basic_info}
       />
+      <Seniority />
       <Projects
         resumeProjects={resumeData.projects}
         resumeBasicInfo={resumeData.basic_info}
