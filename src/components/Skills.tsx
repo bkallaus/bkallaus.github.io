@@ -1,11 +1,17 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ResumeBasicInfo, SharedSkills } from "../types";
 
-const Skills = ({ sharedSkills, resumeBasicInfo }) => {
+type SkillsProps = {
+  sharedSkills: SharedSkills;
+  resumeBasicInfo: ResumeBasicInfo;
+}
+
+const Skills: React.FC<SkillsProps> = ({ sharedSkills, resumeBasicInfo }) => {
   const [activeCategory, setActiveCategory] = useState('All');
 
   // Manual categorization mapping since JSON is flat
-  const categoryMap = {
+  const categoryMap: Record<string, string> = {
     'TypeScript': 'Frontend',
     'JavaScript': 'Frontend',
     'React': 'Frontend',
@@ -46,8 +52,8 @@ const Skills = ({ sharedSkills, resumeBasicInfo }) => {
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${activeCategory === category
-                  ? 'bg-blue-600 text-white shadow-lg transform scale-105'
-                  : 'bg-white text-gray-600 hover:bg-gray-200'
+                ? 'bg-blue-600 text-white shadow-lg transform scale-105'
+                : 'bg-white text-gray-600 hover:bg-gray-200'
                 }`}
             >
               {category}

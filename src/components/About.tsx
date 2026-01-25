@@ -1,6 +1,12 @@
 import React from "react";
+import { ResumeBasicInfo, SharedBasicInfo } from "../types";
 
-const About = ({ resumeBasicInfo, sharedBasicInfo }) => {
+type AboutProps = {
+  resumeBasicInfo: ResumeBasicInfo;
+  sharedBasicInfo: SharedBasicInfo;
+}
+
+const About: React.FC<AboutProps> = ({ resumeBasicInfo, sharedBasicInfo }) => {
   let about;
   let hello;
   let profilepic;

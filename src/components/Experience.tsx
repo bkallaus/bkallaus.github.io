@@ -1,6 +1,12 @@
 import React from "react";
+import { Experience as ExperienceType, ResumeBasicInfo } from "../types";
 
-const Experience = ({ resumeExperience, resumeBasicInfo }) => {
+type ExperienceProps = {
+  resumeExperience: ExperienceType[];
+  resumeBasicInfo: ResumeBasicInfo;
+}
+
+const Experience: React.FC<ExperienceProps> = ({ resumeExperience, resumeBasicInfo }) => {
   if (!resumeExperience || !resumeBasicInfo) {
     return null;
   }

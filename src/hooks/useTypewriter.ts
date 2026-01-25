@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useTypewriter = (text, speed = 150, delay = 1000) => {
+export const useTypewriter = (text: string | string[], speed = 150, delay = 1000) => {
     const [displayText, setDisplayText] = useState('');
     const [index, setIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);

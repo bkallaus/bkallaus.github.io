@@ -1,7 +1,12 @@
 import React from 'react';
 import { useTypewriter } from '../hooks/useTypewriter';
+import { SharedBasicInfo } from '../types';
 
-const Hero = ({ headerData }) => {
+interface HeroProps {
+    headerData: SharedBasicInfo;
+}
+
+const Hero: React.FC<HeroProps> = ({ headerData }) => {
     const titles = headerData?.titles || ["Senior Frontend Developer"];
     const typedText = useTypewriter(titles, 100, 2000);
 

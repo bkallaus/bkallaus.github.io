@@ -7,10 +7,11 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { PortfolioSharedData, ResumeData } from "./types";
 
 export const App = () => {
-  const [sharedData, setSharedBasicInfo] = useState({});
-  const [resumeData, setResumeData] = useState({});
+  const [sharedData, setSharedBasicInfo] = useState<PortfolioSharedData>({} as PortfolioSharedData);
+  const [resumeData, setResumeData] = useState<ResumeData>({} as ResumeData);
 
   useEffect(() => {
     const loadSharedData = () => {

@@ -1,8 +1,14 @@
 import React from "react";
+import { Project, ResumeBasicInfo } from "../types";
 
-const Projects = ({ resumeProjects, resumeBasicInfo }) => {
+type ProjectsProps = {
+  resumeProjects: Project[];
+  resumeBasicInfo: ResumeBasicInfo;
+}
+
+const Projects: React.FC<ProjectsProps> = ({ resumeProjects, resumeBasicInfo }) => {
   let sectionName = "Projects";
-  let projects = [];
+  let projects: React.ReactElement[] = [];
 
   if (resumeBasicInfo) {
     sectionName = resumeBasicInfo.section_name.projects;
