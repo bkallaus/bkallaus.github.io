@@ -26,9 +26,6 @@ const Experience: React.FC<ExperienceProps> = ({ resumeExperience, resumeBasicIn
           {work.technologies && work.technologies.map((tech, i) => (
             <span key={i} className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">{tech}</span>
           ))}
-          {work.mainTech && work.mainTech.map((tech, i) => (
-            <span key={'main-' + i} className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">{tech}</span>
-          ))}
         </div>
       </div>
     );

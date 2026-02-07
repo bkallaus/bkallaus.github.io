@@ -36,11 +36,6 @@ const Projects: React.FC<ProjectsProps> = ({ resumeProjects, resumeBasicInfo }) 
                 Check out this project regarding {project.startDate}
               </p>
             </div>
-            <div className="mt-4">
-              <span className="text-xs font-semibold text-blue-500 bg-blue-50 px-2 py-1 rounded">
-                View Project
-              </span>
-            </div>
           </div>
         </a>
       </div>

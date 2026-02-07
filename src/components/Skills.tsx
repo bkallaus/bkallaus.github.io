@@ -76,9 +76,6 @@ const Skills: React.FC<SkillsProps> = ({ sharedSkills, resumeBasicInfo }) => {
                 transition={{ duration: 0.2 }}
               >
                 <div className="flex items-center gap-3 bg-white px-5 py-3 rounded-full shadow-sm border border-gray-100 hover:shadow-md transition-shadow group cursor-default">
-                  <span className="text-2xl text-gray-500 group-hover:text-blue-500 transition-colors">
-                    <i className={skill.class}></i>
-                  </span>
                   <span className="text-sm font-semibold text-gray-700">{skill.name}</span>
                 </div>
               </motion.li>
