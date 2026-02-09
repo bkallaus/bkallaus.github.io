@@ -73,10 +73,13 @@ const Skills: React.FC<SkillsProps> = ({ sharedSkills, resumeBasicInfo }) => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="flex items-center gap-3 bg-white px-5 py-3 rounded-full shadow-sm border border-gray-100 hover:shadow-md transition-shadow group cursor-default">
-                  <span className="text-sm font-semibold text-gray-700">{skill.name}</span>
+                <div className="flex items-center gap-3 bg-white px-5 py-3 rounded-full shadow-sm border border-gray-100 hover:shadow-lg hover:border-blue-200 transition-all group cursor-pointer">
+                  <i className={`${skill.class} colored text-2xl`}></i>
+                  <span className="text-base font-semibold text-gray-700">{skill.name}</span>
                 </div>
               </motion.li>
             ))}
