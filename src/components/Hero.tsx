@@ -13,9 +13,12 @@ const Hero: React.FC<HeroProps> = ({ headerData }) => {
     return (
         <div className="min-h-[80vh] flex flex-col justify-center items-center bg-gray-50 text-center px-4 relative overflow-hidden">
             {/* Background decoration */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-blue-100 rounded-full blur-[100px] opacity-50"></div>
-                <div className="absolute top-[30%] -right-[10%] w-[40%] h-[60%] bg-indigo-100 rounded-full blur-[100px] opacity-50"></div>
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+                <iframe
+                    src="https://ben.kallaus.me/simple-city"
+                    title="Simple City Visualization"
+                    className="w-full h-full border-0"
+                />
             </div>
 
             <div className="z-10 max-w-4xl relative">
