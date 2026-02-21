@@ -34,4 +34,4 @@ jobs:
           folder: build
           branch: gh-pages
           clean: true
-          cname: ben.kallaus.io
+          cname: ben.kallaus.me
