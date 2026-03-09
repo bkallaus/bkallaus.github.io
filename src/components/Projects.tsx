@@ -31,10 +31,6 @@ const Projects: React.FC<ProjectsProps> = ({ resumeProjects, resumeBasicInfo }) 
               <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                 {project.title} <i className="fas fa-external-link-alt text-sm ml-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
               </h3>
-              <p className="text-gray-600 text-sm">
-                {/* Description could go here if data has it, for now title is main */}
-                Check out this project regarding {project.startDate}
-              </p>
             </div>
           </div>
         </a>

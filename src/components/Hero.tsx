@@ -7,7 +7,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ headerData }) => {
-    const titles = headerData?.titles || ["Senior Frontend Developer"];
+    const titles = headerData?.titles || ["Lead Software Developer"];
     const typedText = useTypewriter(titles, 100, 2000);
 
     return (
@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ headerData }) => {
                 />
             </div>
 
-            <div className="z-10 max-w-4xl relative">
+            <div className="z-10 max-w-4xl relative p-10 rounded-xl bg-white/5 backdrop-blur-md shadow-lg border border-white/20">
                 <h1 className="text-6xl md:text-8xl font-bold text-gray-900 tracking-tight mb-6">
                     {headerData?.name || "Ben Kallaus"}
                 </h1>
@@ -37,19 +37,6 @@ const Hero: React.FC<HeroProps> = ({ headerData }) => {
                     </span>
                 </p>
             </div>
-
-            {/* Future Content Placeholder */}
-            {/* <div className="mt-24 border-2 border-dashed border-gray-200 rounded-xl w-full max-w-3xl h-64 flex items-center justify-center relative group">
-                <div className="text-gray-300 font-medium group-hover:text-gray-400 transition-colors">
-                    Interactive Showcase Area
-                </div>
-            </div>
-
-            <div className="absolute bottom-10 animate-bounce text-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-            </div> */}
         </div>
     );
 };

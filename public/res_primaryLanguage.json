@@ -9,9 +9,9 @@
       "experience": "Experience"
     }
   },
-  "projects": [  
+  "projects": [
     {
-       "title": "Smart Recipes",
+      "title": "Smart Recipes",
       "description": "",
       "images": [
         "images/portfolio/musical-cards.png"
@@ -60,7 +60,7 @@
   "experience": [
     {
       "company": "Tractor Zoom",
-      "title": "Senior Software Developer",
+      "title": "Lead Software Developer",
       "years": "05/2021 - present",
       "mainTech": [
         ""

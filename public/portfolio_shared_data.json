@@ -3,7 +3,7 @@
     "name": "Ben Kallaus",
     "titles": [
       "Full Stack Developer",
-      "Senior Software Engineer",
+      "Lead Software Engineer",
       "Mobile App Developer"
     ],
     "social": [
@@ -66,6 +66,11 @@
         "name": "PostgreSQL",
         "class": "devicon-postgresql-plain",
         "level": "60"
+      },
+      {
+        "name": "GraphQL",
+        "class": "devicon-graphql-plain",
+        "level": "80"
       }
     ]
   }
